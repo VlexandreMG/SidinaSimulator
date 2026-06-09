@@ -1,4 +1,5 @@
 #include "../../includes/Window.hpp"
+#include "../../dessin/Airplane.hpp"
 #include <SFML/Graphics.hpp>
 
 
@@ -12,7 +13,7 @@ namespace ui_window
         this->setPosition(sf::Vector2i(positionX, positionY));
 
     }
-        void Window::afficher()
+        void Window::afficher(ui_dessin::Airplane& avion)
         {
             this->setFramerateLimit(60);
 
@@ -26,6 +27,7 @@ namespace ui_window
                 }
 
                 this->clear(sf::Color::White);
+                avion.dessiner(*this);
                 this->display();
             }
         }

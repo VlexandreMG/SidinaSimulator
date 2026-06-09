@@ -2,6 +2,8 @@
 #define WINDOW
 #include <SFML/Graphics.hpp>
 #include <string>
+#include "../dessin/Airplane.hpp"
+
 
 namespace ui_window 
 {
@@ -11,7 +13,7 @@ namespace ui_window
             std::string title;
         public:
             Window(const std::string& title, unsigned int width, unsigned int height);
-            void afficher();
+            void afficher(ui_dessin::Airplane& avion);
     };
 }
 #endif
