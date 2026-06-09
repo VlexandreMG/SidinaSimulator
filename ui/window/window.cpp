@@ -9,5 +9,21 @@ namespace ui_window
         int posX = (modeBureau.with - this->getSize().x) / 2;
         int posY = (modeBureau.height - this->getSize().y) / 2;
         this->setPosition(sf::Vector2i(posX,posY));
+
+        void Window::afficher() 
+        {
+            this->setFramerateLimit(60);
+
+            while (this->isOpen()) {
+                sf::Event event;
+                while (this->pollEvent(event)) {
+                    if (event.type == sf::Event::Closed)
+                        this->Close();
+                }
+
+                this->clear(sf::Color::White);
+                this->display();
+            }
+        }
     }   
 }
