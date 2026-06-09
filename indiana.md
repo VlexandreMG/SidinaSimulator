@@ -515,3 +515,7 @@ Affichage de guide_cpp_complet.md.
 #### Persoo : 
 -  expected unqualified-id before ‘const’ 
     -> Tsy tokony mipetra eo le const . 
+- this
+    -> Pointeur vers lui même 
+- *this
+    -> Objet lui même 
