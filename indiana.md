@@ -511,3 +511,7 @@ Le C++ segmente l'accès aux variables et fonctions d'un objet :
    * Une méthode qui ne retourne rien (`void`). Comme nous sommes dans un fichier d'en-tête (`.hpp`), il n'y a pas d'accolades `{ }`. On indique juste au compilateur que la fonction existe. La logique de cette fonction sera écrite dans le fichier `.cpp`.
 guide_cpp_complet.md
 Affichage de guide_cpp_complet.md.
+
+#### Persoo : 
+-  expected unqualified-id before ‘const’ 
+    -> Tsy tokony mipetra eo le const . 
