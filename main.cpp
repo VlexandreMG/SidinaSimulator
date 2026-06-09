@@ -1,4 +1,4 @@
-#include "./includes/window.hpp"
+#include "./includes/Window.hpp"
 
 int main() {
     

@@ -5,7 +5,7 @@
 
 namespace ui_window 
 {
-    class window : public sf::RenderWindow 
+    class Window : public sf::RenderWindow 
     {
         private: 
             std::string title;
