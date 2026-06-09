@@ -1,4 +1,4 @@
-#include "window.cpp"
+#include "window.hpp"
 
 namespace ui_window 
 {
