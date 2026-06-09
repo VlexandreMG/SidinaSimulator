@@ -1,3 +1,1 @@
-#!/bin/bash
-
-g++ -std=c++17 main.cpp -o main 
+g++ -std=c++17 main.cpp ./ui/window/Window.cpp -o SidinaSimulator -lsfml-graphics -lsfml-window -lsfml-system && ./SidinaSimulator
